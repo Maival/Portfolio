@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIVAL SAVALIYA - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MS</span>
+            </div>
+            <ul class="nav-links">
+
+                <li><a href="#summary" class="nav-link">HOME</a></li>
+                <li><a href="#tech-stack" class="nav-link">TECHNOLOGIES</a></li>
+                <li><a href="#about" class="nav-link">ABOUT ME</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+                <li><a href="#dsa-skills" class="nav-link">DSA SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#education" class="nav-link">EDUCATION</a></li>
+            </ul>
+            <a href="#contact" class="contact-btn">
+                <span>CONTACT</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                        d="M3.333 2.667h9.334c.736 0 1.333.597 1.333 1.333v8c0 .736-.597 1.333-1.333 1.333H3.333c-.736 0-1.333-.597-1.333-1.333V4c0-.736.597-1.333 1.333-1.333z"
+                        stroke="white" stroke-width="1.5" fill="none" />
+                    <path d="M14 4l-6 4-6-4" stroke="white" stroke-width="1.5" fill="none" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Matching Reference -->
+    <section class="hero-reference" id="summary">
+        <div class="hero-ref-container">
+            <div class="hero-ref-content">
+                <div class="hero-ref-left">
+                    <div class="hero-subtitle">APPLICATION DEVELOPER</div>
+                    <h1 class="hero-main-heading">
+                        <span class="heading-part-white">I'M</span>
+                        <span class="heading-part-teal">MAIVAL SAVALIYA</span>
+                    </h1>
+                    <div class="hero-divider"></div>
+                    <p class="hero-description">Passionate Full Stack Developer with expertise in modern web
+                        technologies. Creating innovative solutions and delivering exceptional user experiences through
+                        clean code and creative design. Specialized in Angular, TypeScript, and modern JavaScript
+                        frameworks.</p>
+                </div>
+                <div class="hero-ref-right">
+                    <div class="laptop-3d-container">
+                        <div class="laptop-3d">
+                            <div class="laptop-screen">
+                                <div class="laptop-content">
+                                    <div class="code-editor">
+                                        <div class="code-header">
+                                            <div class="code-dot"></div>
+                                            <div class="code-dot"></div>
+                                            <div class="code-dot"></div>
+                                            <span class="code-title">portfolio</span>
+                                            <a href="Resume/Maival_Savaliya_CV.pdf" download="Maival_Savaliya_CV.pdf"
+                                                class="resume-icon" title="Download Resume">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                                </svg>
+                                                <span>View Resume</span>
+                                            </a>
+                                        </div>
+                                        <div class="code-body">
+                                            <div class="code-line-js">
+                                                <span class="code-keyword">console</span><span
+                                                    class="code-operator">.</span><span
+                                                    class="code-function">log</span><span
+                                                    class="code-bracket">(</span><span class="code-string"
+                                                    id="jsMessage"></span><span class="code-bracket">)</span><span
+                                                    class="code-operator">;</span>
+                                            </div>
+                                            <div class="code-line-empty"></div>
+                                            <div class="code-line-java">
+                                                <span class="code-keyword">System</span><span
+                                                    class="code-operator">.</span><span
+                                                    class="code-keyword">out</span><span
+                                                    class="code-operator">.</span><span
+                                                    class="code-function">println</span><span
+                                                    class="code-bracket">(</span><span class="code-string"
+                                                    id="javaMessage"></span><span class="code-bracket">)</span><span
+                                                    class="code-operator">;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                            <div class="laptop-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages & Skills Section (Tech Stack) -->
+    <section class="tech-stack" id="tech-stack">
+        <h2 class="tech-title">TECH STACK</h2>
+
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                <span>Java</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+                <span>Spring Boot</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <span>MySQL</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+                <span>TypeScript</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                <span>Git</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                <span>GitHub</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+                <span>Angular</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg">
+                <span>IntelliJ</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg">
+                <span>Postman</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <span>HTML</span>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <span>CSS</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-header-centered">
+                <div class="section-subtitle">ABOUT ME</div>
+                <h2 class="section-title-large">
+                    <span class="title-part-white">WHO</span>
+                    <span class="title-part-teal">AM I?</span>
+                </h2>
+                <div class="section-divider-center"></div>
+            </div>
+            <div class="about-bio-content">
+                <p>Hi, I’m Maival Savaliya, a passionate and detail-oriented Computer Engineering graduate from Pacific
+                    School of Engineering, affiliated with Gujarat Technological University (Batch of 2025, CGPA:
+                    7.60/10). I have a strong academic foundation and a keen interest in building scalable, high-quality
+                    software solutions.</p>
+
+                <p>I have 6 months of hands-on experience in Angular, and during my internship, I gained strong
+                    practical knowledge of Angular and TypeScript, focusing on component-based development, best
+                    practices, and real-world application workflows. After completing my internship, I worked on a
+                    production-level project, further strengthening my frontend expertise and understanding of
+                    application architecture.</p>
+
+                <p>One of the key projects I worked on is CruisePal, a digital platform designed to simplify and
+                    modernize cruise operations. CruisePal improves operational efficiency and guest experience through
+                    intelligent workflows, seamless data access, and a flexible, technology-driven architecture that
+                    adapts to diverse fleet requirements. This project enhanced my problem-solving skills and exposure
+                    to real-world software development challenges.</p>
+
+                <p>I am currently expanding my backend skill set by learning Java, MySQL, and Spring Boot, with a focus
+                    on scalable system design and clean architecture. I completed my 10th and 12th education with 65%
+                    and 64%, respectively, and I am currently based in Surat, Gujarat. I am open to relocation and
+                    available to join immediately. I am seeking an opportunity in a reputed organization where I can
+                    learn, grow, and contribute meaningfully as a software professional.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">SKILLS</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>Angular</h4>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:85%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>TypeScript</h4>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:80%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>JavaScript</h4>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:90%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>Java</h4>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:70%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>Spring Boot</h4>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:65%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>SQL</h4>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:70%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>HTML & CSS</h4>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:90%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h4>Git</h4>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress">
+                    <span style="width:70%"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-container">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Java Developer Intern</h3>
+                        <p class="timeline-company">WHYPHY TECHNOLOGIES</p>
+                        <p class="timeline-description">Currently working as a Java Developer Intern, gaining hands-on
+                            experience in core Java and object-oriented programming concepts. Contributing to
+                            application development tasks while continuously improving coding, debugging, and
+                            problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Internship</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Internship (3 Months)</h3>
+                        <p class="timeline-company">Kautilyam</p>
+                        <p class="timeline-description">Gained hands-on experience with modern frontend technologies,
+                            specifically focusing on Angular and TypeScript. Contributed to building responsive user
+                            interfaces and understanding component-based architecture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Junior</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p class="timeline-company">Kautilyam</p>
+                        <p class="timeline-description">Advanced into a full development role, mastering the Angular
+                            framework for complex frontend solutions. Expanded expertise into backend development using
+                            Java and SQL, creating robust and efficient full-stack applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DSA Skills Section -->
+    <section class="dsa-skills" id="dsa-skills">
+        <div class="section-container">
+            <h2 class="section-title">DSA SKILLS</h2>
+            <div class="dsa-content">
+                <div class="dsa-category">
+                    <h3 class="dsa-category-title">Data Structures</h3>
+                    <div class="dsa-items">
+                        <div class="dsa-item">Arrays</div>
+                        <div class="dsa-item">Linked Lists</div>
+                        <div class="dsa-item">Stacks</div>
+                        <div class="dsa-item">Queues</div>
+                        <div class="dsa-item">Trees</div>
+                        <div class="dsa-item">Graphs</div>
+                        <div class="dsa-item">Hash Tables</div>
+                        <div class="dsa-item">Heaps</div>
+                    </div>
+                </div>
+                <div class="dsa-category">
+                    <h3 class="dsa-category-title">Algorithms</h3>
+                    <div class="dsa-items">
+                        <div class="dsa-item">Sorting</div>
+                        <div class="dsa-item">Searching</div>
+                        <div class="dsa-item">Dynamic Programming</div>
+                        <div class="dsa-item">Greedy Algorithms</div>
+                        <div class="dsa-item">Backtracking</div>
+                        <div class="dsa-item">Graph Algorithms</div>
+                        <div class="dsa-item">Tree Traversal</div>
+                        <div class="dsa-item">String Algorithms</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="projects-header">
+                <h2 class="projects-title">THE WORKS <br> CLOSEST TO MY HEART</h2>
+
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/GOV_INFO.png" alt="InfoPay">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">InfoPay – Government Scheme Portal</h3>
+                        <p class="project-description">Informational portal to explore government schemes with clean UI
+                            and search.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Maival/infopay-web/blob/main/index.html" target="_blank"
+                                class="project-link github">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://maival.github.io/infopay-web/#home" target="_blank"
+                                class="project-link live">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/CruisePal.png" alt="CruisePAL">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">CruisePAL - Smarter Cruise Operations</h3>
+                        <p class="project-description">Contributed to a live cruise operations management platform by
+                            developing scalable and performance-driven frontend modules using Angular.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Angular</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://kautilyam.com/case-studies/cruisepal-industry-logistics-and-hospitality/"
+                                target="_blank" class="project-link live">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="section-container">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year">2021 - 2025</div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Bachelor of Engineering (B.E) in Computer Engineering</h3>
+                        <p class="education-institution"> Gujarat Technological University.
+                        </p>
+                        <p class="education-description"> CGPA: 7.62 / 10</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2021</div>
+                    <div class="education-content">
+                        <h3 class="education-degree">H.S.C. (12th Grade)</h3>
+                        <p class="education-institution">Science Stream</p>
+                        <p class="education-description">Percentage: 67%</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2019</div>
+                    <div class="education-content">
+                        <h3 class="education-degree">S.S.C. (10th Grade)</h3>
+                        <p class="education-institution">General Stream</p>
+                        <p class="education-description">Percentage: 70%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-header-centered">
+                <h2 class="contact-main-title">Get In Touch</h2>
+                <div class="contact-title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-side">
+                    <p class="contact-subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </span>
+                            <span class="info-text">maivalsavaliya@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.01-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.34.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </span>
+                            <span class="info-text">+91 90999 30149</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                            </span>
+                            <span class="info-text">Surat, Gujarat, India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/maival-savaliya-7809b3330" target="_blank"
+                            class="social-link">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/maival" target="_blank" class="social-link">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form class="contact-modern-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="modern-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="modern-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="modern-textarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="send-message-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
